@@ -39,3 +39,4 @@ if __name__ == '__main__':
     # We are able to do a multiple definite integral
     G_evalf = sp.integrate(g, (x, 0, np.pi), (y, 0, 2*np.pi)).evalf(subs={theta: np.pi/2, phi: np.pi/6})
     print(f"G_evalf = {G_evalf}")
+
