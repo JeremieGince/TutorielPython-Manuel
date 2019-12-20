@@ -1,7 +1,6 @@
 from matplotlib import pyplot as plt
 import numpy as np
 import os
-from Integral_calculus.MonteCarlo_integration import monte_carlo_integration
 
 
 if __name__ == '__main__':
