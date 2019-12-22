@@ -38,7 +38,7 @@ if __name__ == '__main__':
 
     plt.plot(X, y(X), c="r", label="y curve")
     plt.scatter(np.array(in_ensemble)[:, 0], np.array(in_ensemble)[:, 1], label="random points in the curve")
-    plt.scatter(np.array(out_ensemble)[:, 0], np.array(out_ensemble)[:, 1], label="random points out the curve")
+    plt.scatter(np.array(out_ensemble)[:, 0], np.array(out_ensemble)[:, 1], label="random points out of the curve")
     plt.xlabel("x")
     plt.ylabel("y")
     plt.grid()
