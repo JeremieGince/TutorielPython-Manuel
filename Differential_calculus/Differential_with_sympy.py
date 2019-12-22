@@ -5,6 +5,7 @@ import sympy as sp
 from matplotlib import cm
 from matplotlib.ticker import LinearLocator, FormatStrFormatter
 from mpl_toolkits.mplot3d import axes3d, Axes3D
+from sympy.utilities.lambdify import lambdastr
 
 
 if __name__ == '__main__':
@@ -30,8 +31,9 @@ if __name__ == '__main__':
     Y = np.linspace(-5, 5, 1_000)
     X, Y = np.meshgrid(X, Y)
     F_lambdify = sp.lambdify((x, y), F, modules="numpy")
-    f_x_lambdify = sp.lambdify((x,), f_x, modules="numpy")
-    f_y_lambdify = sp.lambdify((y,), f_y, modules="numpy")
+    print(f"f_x = {lambdastr(x, f_x)}")
+    f_x_lambdify = sp.lambdify(x, f_x, modules="numpy")
+    f_y_lambdify = sp.lambdify(y, f_y, modules="numpy")
     Z = F_lambdify(X, Y)
 
     fig = plt.figure()
@@ -45,7 +47,7 @@ if __name__ == '__main__':
     ax.zaxis.set_major_formatter(FormatStrFormatter('%.02f'))
 
     # add gradient
-    ax.plot(X, f_x_lambdify(X))
+    ax.plot(X, f_x_lambdify(X), zdir="z")
 
     # Add a color bar which maps values to colors.
     fig.colorbar(surf, shrink=0.5, aspect=5)
