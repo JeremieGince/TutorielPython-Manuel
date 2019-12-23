@@ -11,21 +11,22 @@ from sympy.utilities.lambdify import lambdastr
 
 if __name__ == '__main__':
     x, y = sp.symbols("x, y")
-    #
-    # G = 9 * x ** 2 + 3 * x + 1
-    # g = sp.diff(G, x)
-    # X = np.linspace(-10, 10, 1_000)
-    # plt.plot(X, [G.evalf(subs={"x": i}) for i in X], label=f"G = {G}")
-    # plt.plot(X, [g.evalf(subs={"x": i}) for i in X], label=f"g := G' = {g}")
-    # plt.grid()
-    # plt.legend()
-    # plt.xlabel("x")
-    # plt.ylabel("y")
-    # plt.savefig(os.getcwd() + "/diff_exemple_G_and_g.png", dpi=300)
-    # plt.show()
+
+    G = 9 * x ** 2 + 3 * x + 1
+    g = sp.diff(G, x)
+    X = np.linspace(-10, 10, 1_000)
+    plt.plot(X, [G.evalf(subs={"x": i}) for i in X], label=f"G = {G}")
+    plt.plot(X, [g.evalf(subs={"x": i}) for i in X], label=f"g := G' = {g}")
+    plt.grid()
+    plt.legend()
+    plt.xlabel("x")
+    plt.ylabel("y")
+    plt.savefig(os.getcwd() + "/diff_exemple_G_and_g.png", dpi=300)
+    plt.show()
 
     F = x**2 - y**2
-    grad_F = [sp.diff(F, i) for i in (x, y)]
+    grad_F = [sp.diff(F, x_i) for x_i in (x, y)]
+    print(f"grad_F = {grad_F}")
 
     X = np.linspace(-5, 5, 50)
     Y = np.linspace(-5, 5, 50)
