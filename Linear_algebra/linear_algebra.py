@@ -13,3 +13,5 @@ if __name__ == '__main__':
     sp.pprint(f"det(A) = {A_det}")
     A_inv = A.pinv()
     sp.pprint(f"A^-1 = {A_inv}")
+
+    chr()
