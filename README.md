@@ -1,4 +1,4 @@
-# Le guide le plus fanstasmagorique en python
+# Le guide le plus fantasmagorique en python
  Tutoriel au langage python pour les étudiants en physique.
 
 Contenu:
