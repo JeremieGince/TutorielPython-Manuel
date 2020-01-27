@@ -1,4 +1,4 @@
-# ProjetPythonPhysique
+# Guide Python
  Tutoriel au langage python pour les étudiants en physique.
 
 Contenu:
