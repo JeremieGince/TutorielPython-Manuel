@@ -2,7 +2,7 @@
  Tutoriel au langage *Python* pour les étudiants en physique / génie physique de l'Université Laval.
  
  Fichier du guide:
- *Programmation_en_python_ou_comment_reussir_son_premier_cycle_sans_dependre_des_autres_avec_son_ordinateur.pdf*
+ *Book.pdf*
 
 Contenu:
 
