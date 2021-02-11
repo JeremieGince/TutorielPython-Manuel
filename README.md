@@ -21,6 +21,7 @@ Contenu:
 13. Introduction au *deep learning*
 
 À venir:
+- Introduction sur comment créer un projet avec pycharm et GitHub.
 - Dans la section **Modules importants**:
   * Finir la sous-section *NumPy*
   * Ajouter une sous-section *SciPy*
