@@ -1,5 +1,5 @@
 # Comment pythoner comme un pro
- Tutoriel au langage *Python* pour les étudiants en physique / génie physique de l'Université Laval.
+ Tutoriel au langage *Python* pour les étudiants en physique / génie physique de l'Université Laval (ou de n'importe quel programme!).
  
  Fichier du guide:
  *Book.pdf*
@@ -26,7 +26,7 @@ Contenu:
   * Finir la sous-section *NumPy*
   * Ajouter une sous-section *SciPy*
   * Ajouter une sous-section *Matplotlib*
-  * Ajouter une sous-section *Pandas*
+  * Finir la sous-section *Pandas*
   * AJouter une sous-section *SymPy*
 - Ajouter une section **Algèbre linéaire**
 - Ajouter une section **Décorateurs**
