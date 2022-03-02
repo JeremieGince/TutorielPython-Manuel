@@ -1,8 +1,10 @@
 # Comment pythoner comme un pro
  Tutoriel au langage *Python* pour les étudiants en physique / génie physique de l'Université Laval (ou de n'importe quel programme!).
  
- Fichier du guide:
- *Book.pdf*
+ Fichiers du guide:
+ - [Manuel](https://github.com/JeremieGince/TutorielPython-Manuel/blob/master/Manuel.pdf)
+ - [Chapitre sur les environnements](https://github.com/JeremieGince/TutorielPython-Manuel/blob/master/Environments/Environnements.pdf)
+ - [Cycle-de-developpement-avec-git](https://github.com/JeremieGince/TutorielPython-Manuel/blob/master/Cycle-de-developpement-avec-git/Cycle-de-developpement-avec-git.pdf)
 
 Contenu:
 
